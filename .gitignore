@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/EntityCodeFirst.POC/.vs
+/EntityCodeFirst.POC/Entity CodeFirst.DataLayer/obj/Debug
+/EntityCodeFirst.POC/EntityCodeFirst.BusinessLayer/obj/Debug
+/EntityCodeFirst.POC/EntityCodeFirst.Common/obj/Debug
+/EntityCodeFirst.POC/EntityCodeFirst.Entities/obj/Debug
+/EntityCodeFirst.POC/packages
+/EntityCodeFirst.POC/WebApplication4/bin
+/EntityCodeFirst.POC/WebApplication4/obj/Debug
+/EntityCodeFirst.POC/EntityCodeFirst.WebApi/obj/Debug
+/EntityCodeFirst.POC/EntityCodeFirst.WebApi/bin
