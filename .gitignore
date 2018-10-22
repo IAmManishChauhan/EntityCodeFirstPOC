@@ -12,3 +12,7 @@
 /EntityCodeFirst.POC/WebApplication4/obj/Debug
 /EntityCodeFirst.POC/EntityCodeFirst.WebApi/obj/Debug
 /EntityCodeFirst.POC/EntityCodeFirst.WebApi/bin
+/EntityCodeFirst.POC/Entity CodeFirst.DataLayer/bin/Debug
+/EntityCodeFirst.POC/EntityCodeFirst.BusinessLayer/bin/Debug
+/EntityCodeFirst.POC/EntityCodeFirst.Common/bin/Debug
+/EntityCodeFirst.POC/EntityCodeFirst.Entities/bin
