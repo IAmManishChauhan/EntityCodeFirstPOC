@@ -8,8 +8,8 @@ namespace EntityCodeFirst.Entities
 {
     public class ProductCategory
     {
-        public int Id { get; set; }
-        public int CategoryName { get; set; }
+        public int ProductCategoryId { get; set; }
+        public string CategoryName { get; set; }
 
         public IList<Product> Products { get; set; }
     }

@@ -11,10 +11,9 @@ namespace EntityCodeFirst.BusinessLayer
 {
     public class Repository<T> : IRepository<T> where T : class
     {
-        private readonly PocPortalDb dbContext;
-        private DbSet<T> dbSet;
-        string errorMessage = string.Empty;
-
+        public PocPortalDb dbContext;
+        public DbSet<T> dbSet;
+ 
         public Repository() {
             dbContext = new PocPortalDb();
             dbSet = dbContext.Set<T>();
@@ -52,10 +51,7 @@ namespace EntityCodeFirst.BusinessLayer
 
         public void Update(T entity)
         {
-            if (entity == null)
-            {
-                throw new ArgumentNullException("entity");
-            }
+            dbSet.Attach(entity);
             dbContext.SaveChanges();
         }
     }

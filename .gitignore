@@ -16,3 +16,5 @@
 /EntityCodeFirst.POC/EntityCodeFirst.BusinessLayer/bin/Debug
 /EntityCodeFirst.POC/EntityCodeFirst.Common/bin/Debug
 /EntityCodeFirst.POC/EntityCodeFirst.Entities/bin
+/EntityCodeFirst.POC/EntityCodeFirst.DB/bin/Debug
+/EntityCodeFirst.POC/EntityCodeFirst.DB/obj/Debug

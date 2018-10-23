@@ -19,9 +19,16 @@ namespace EntityCodeFirst.WebApi.Controllers
         }
 
         [HttpGet]
-        public string getAll() {
-            var d = productCategoryRepository.GetAll();
-            return "";
+        public HttpResponseMessage getAll() {
+
+           var productCategorys = productCategoryRepository.GetAll();
+
+            if (productCategorys ==  null)
+            {
+                return Request.CreateResponse(HttpStatusCode.NotFound);
+            }
+
+            return Request.CreateResponse(HttpStatusCode.OK, productCategorys);
         }
     }
 }

@@ -10,7 +10,7 @@ using EntityCodeFirst.Entities;
 
 namespace EntityCodeFirst.BusinessLayer
 {
-    public class ProductCategoryRepository : Repository<ProductCategoryRepository>,IProductCategoryRepository
+    public class ProductCategoryRepository : Repository<ProductCategory>,IProductCategoryRepository
     {
         public ProductCategoryRepository() {
 
