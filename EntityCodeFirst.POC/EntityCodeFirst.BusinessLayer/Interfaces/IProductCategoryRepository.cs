@@ -7,8 +7,8 @@ using EntityCodeFirst.Entities;
 
 namespace EntityCodeFirst.BusinessLayer.Interfaces
 {
-    public interface IProduct :IRepository<Product>
+    public interface IProductCategoryRepository : IRepository<ProductCategoryRepository>
     {
-       
+        void InsertProduct(Product product);
     }
 }

@@ -16,13 +16,13 @@ namespace EntityCodeFirst.BusinessLayer
         string errorMessage = string.Empty;
 
         public Repository() {
-            this.dbContext = new PocPortalDb();
+            dbContext = new PocPortalDb();
             dbSet = dbContext.Set<T>();
         }
 
         public IEnumerable<T> GetAll()
         {
-            return dbSet.ToList<T>();
+            return dbSet.ToList();
         }
 
         public void Add(T entity)

@@ -49,9 +49,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\IProductCategory.cs" />
-    <Compile Include="Interfaces\IProduct.cs" />
-    <Compile Include="ProductCategory.cs" />
+    <Compile Include="Interfaces\IProductCategoryRepository.cs" />
+    <Compile Include="Interfaces\IProductRepository.cs" />
+    <Compile Include="ProductCategoryRepository.cs" />
     <Compile Include="Repository.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
