@@ -4,9 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using EntityCodeFirst.Entities;
 using EntityCodeFirst.BusinessLayer.Interfaces;
-using EntityCodeFirst.BusinessLayer;
 
 namespace EntityCodeFirst.WebApi.Controllers
 {
@@ -14,8 +12,8 @@ namespace EntityCodeFirst.WebApi.Controllers
     {
 
         IProductCategoryRepository productCategoryRepository;
-        public ProductController() {
-            productCategoryRepository = new ProductCategoryRepository();
+        public ProductController(IProductCategoryRepository _productCategoryRepository) {
+            productCategoryRepository = _productCategoryRepository;
         }
 
         [HttpGet]

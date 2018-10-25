@@ -1,6 +1,8 @@
 using System;
 
 using Unity;
+using EntityCodeFirst.BusinessLayer.Interfaces;
+using EntityCodeFirst.BusinessLayer;
 
 namespace EntityCodeFirst.WebApi
 {
@@ -42,6 +44,7 @@ namespace EntityCodeFirst.WebApi
 
             // TODO: Register your type's mappings here.
             // container.RegisterType<IProductRepository, ProductRepository>();
+            container.RegisterType<IProductCategoryRepository, ProductCategoryRepository>();
         }
     }
 }
