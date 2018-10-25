@@ -14,6 +14,7 @@ namespace EntityCodeFirst.WebApi
             config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("text/html"));
             // Web API routes
             config.MapHttpAttributeRoutes();
+            config.MessageHandlers.Add(new CustomResponseHandler());
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
